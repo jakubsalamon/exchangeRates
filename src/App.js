@@ -1,13 +1,10 @@
 import React from 'react';
 import './css/App.css';
-import Header from './components/header';
+import Layout from './components/layout';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <p>siabada</p>
-   </>
+    <Layout/>
   );
 }
 
