@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
 
 class Dolar extends Component {
-    state = {  }
+    state = { 
+        
+     };
+    componentWillMount() {
+        this.setState({
+            dollar: this.props.szeloba
+        })
+    }
+
+    //  componentWillReceiveProps(props) {
+    //     this.setState({
+    //         dollar: props.szeloba
+    //     })
+       
+    // }
+     
     render() { 
-        return ( 
-            <p>To jest kurs dolara!!</p>
+        
+        
+        return (
+            <div className = "dolar">
+            <p >{this.state.dollar} zł</p>
+            </div>
          );
     }
 }

@@ -4,7 +4,7 @@ class Home extends Component {
     state = {  }
     render() { 
         return ( 
-            <p>To jest komponent domowy</p>
+            <p style = {{fontSize : 55}}>Wybierz walutę</p>
          );
     }
 }

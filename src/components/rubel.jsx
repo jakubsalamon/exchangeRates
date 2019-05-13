@@ -2,9 +2,16 @@ import React, { Component } from 'react';
 
 class Rubel extends Component {
     state = {  }
+
+    componentWillMount() {
+        this.setState({
+            rubel: this.props.szeloba
+        })
+    }
+
     render() { 
         return ( 
-            <p>To jest kurs Rubla!</p>
+            <p>{this.state.rubel} zł</p>
          );
     }
 }

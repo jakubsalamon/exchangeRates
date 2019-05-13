@@ -2,9 +2,16 @@ import React, { Component } from 'react';
 
 class Yen extends Component {
     state = {  }
+
+    componentWillMount() {
+        this.setState({
+            yen: this.props.szeloba
+        })
+    }
+
     render() { 
         return ( 
-            <p>To jest kurs Yena!!</p>
+            <p>{this.state.yen} zł</p>
          );
     }
 }
