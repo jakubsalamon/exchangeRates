@@ -1,10 +1,10 @@
 .container {
     height: 340px;
     width: 1200px;
-    background-color: cadetblue;
     margin: 30px auto 0 auto;
 }
 .leftmenu {
+    float: left;
     box-sizing: border-box;
     height: 100%;
     width: 30%;
@@ -18,7 +18,7 @@ li {
     height: 20%;
 }
 a {
-    background-color: #777;
+    background-color: rgb(157,158,174,0.8);
     box-sizing: border-box;
     font-weight: bold;
     display: block; 
@@ -30,13 +30,30 @@ a {
     width: 100%;
     color: black;
     text-align: center;
-    
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
 }
-a:hover {
-    background-color: #777;
-   
-    border-right: 6px solid black;
-    padding-left: 6px;
-    background-color: #666;
+.nav01:hover {   
+    border-right: 12px solid black;
+    padding-left: 12px;
+    background-color: rgb(84,113,153,0.9);
+}
+.nav02:hover {   
+    border-right: 12px solid black;
+    padding-left: 12px;
+    background-color: rgb(84,113,153,0.9);
+}
+.nav03:hover {   
+    border-right: 12px solid black;
+    padding-left: 12px;
+    background-color: rgb(84,113,153,0.9);
+}
+.nav04:hover {   
+    border-right: 12px solid black;
+    padding-left: 12px;
+    background-color: rgb(84,113,153,0.9);
+}
+.nav05:hover {   
+    border-right: 12px solid black;
+    padding-left: 12px;
+    background-color: rgb(84,113,153,0.9);
 }

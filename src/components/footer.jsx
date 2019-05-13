@@ -6,7 +6,7 @@ class Footer extends Component {
     render() { 
         return ( 
             <div className = "footer">
-                <p>A to jest stopka</p>
+                <p>Zaprojektował i stworzył: Jakub Salamon, student II roku, WSB w Chorzowie</p>
             </div>
          );
     }

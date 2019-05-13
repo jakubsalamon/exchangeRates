@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
+import '../css/content.css';
 
 import Home from './home';
 import Dolar from './dolar';
