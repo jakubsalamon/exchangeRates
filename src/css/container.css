@@ -1,0 +1,42 @@
+.container {
+    height: 340px;
+    width: 1200px;
+    background-color: cadetblue;
+    margin: 30px auto 0 auto;
+}
+.leftmenu {
+    box-sizing: border-box;
+    height: 100%;
+    width: 30%;
+    padding-right: 20px;
+}
+ul {
+    height: 100%;
+    list-style: none;
+}
+li {
+    height: 20%;
+}
+a {
+    background-color: #777;
+    box-sizing: border-box;
+    font-weight: bold;
+    display: block; 
+    font-size: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 68px;
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-align: center;
+    
+    font-family: 'Roboto Slab', serif;
+}
+a:hover {
+    background-color: #777;
+   
+    border-right: 6px solid black;
+    padding-left: 6px;
+    background-color: #666;
+}

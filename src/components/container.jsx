@@ -1,32 +1,30 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, NavLink, Route, Switch} from 'react-router-dom';
-import Dolar from './dolar';
-import Euro from './euro';
-import Yen from './jen';
-import Rubel from './rubel';
+import {BrowserRouter as Router, NavLink, Link, Route, Switch} from 'react-router-dom';
+import Content from './content';
+import '../css/container.css';
+
+
 
 class Container extends Component {
     state = {  }
     render() { 
         return ( 
+            <>
+            <div className = "container">
             <Router>
-            <nav>
-                <ul>
-                    <li><NavLink to = "/dolar">Kurs Dolara</NavLink></li>
-                    <li><NavLink to = "/euro">Kurs Euro</NavLink></li>
-                    <li><NavLink to = "/jen">Kurs Yena</NavLink></li>
-                    <li><NavLink to = "/rubel">Kurs Rubla</NavLink></li>
+            <nav className = "leftmenu">
+                <ul className = "ul">
+                    <li className = "li"><Link to = "/dolar" className = "nav01">Kurs Dolara</Link></li>
+                    <li className = "li"><NavLink to = "/euro" className = "nav02">Kurs Euro</NavLink></li>
+                    <li className = "li"><NavLink to = "/jen" className = "nav03">Kurs Yena</NavLink></li>
+                    <li className = "li"><NavLink to = "/rubel" className = "nav04">Kurs Rubla</NavLink></li>
+                    <li className = "li"><NavLink to = "/" className = "nav05">Powrót</NavLink></li>
                 </ul>
             </nav>
-            <div>
-                <Switch>
-                    <Route path = "/dolar" component = {Dolar}/>
-                    <Route path = "/euro" component = {Euro}/>
-                    <Route path = "/jen" component = {Yen}/>
-                    <Route path = "/rubel" component = {Rubel}/>
-                </Switch>
-            </div>
+            <Content/>
             </Router>
+            </div>
+            </>
          );
     }
 }
