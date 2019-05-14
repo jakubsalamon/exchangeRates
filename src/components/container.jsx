@@ -7,7 +7,7 @@ import '../css/container.css';
 
 class Container extends Component {
     state = { 
-       
+       calcState: "none"
      };
 
         moneyGeter01 = () => {
