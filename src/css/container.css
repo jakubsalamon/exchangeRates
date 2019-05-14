@@ -18,7 +18,7 @@ li {
     height: 20%;
 }
 a {
-    background-color: rgb(157,158,174,0.8);
+    background-color: rgb(169,135,102,0.8);
     box-sizing: border-box;
     font-weight: bold;
     display: block; 
@@ -35,25 +35,25 @@ a {
 .nav01:hover {   
     border-right: 12px solid black;
     padding-left: 12px;
-    background-color: rgb(84,113,153,0.9);
+    background-color: rgb(209,189,169,0.9);
 }
 .nav02:hover {   
     border-right: 12px solid black;
     padding-left: 12px;
-    background-color: rgb(84,113,153,0.9);
+    background-color: rgb(209,189,169,0.9);
 }
 .nav03:hover {   
     border-right: 12px solid black;
     padding-left: 12px;
-    background-color: rgb(84,113,153,0.9);
+    background-color: rgb(209,189,169,0.9);
 }
 .nav04:hover {   
     border-right: 12px solid black;
     padding-left: 12px;
-    background-color: rgb(84,113,153,0.9);
+    background-color: rgb(209,189,169,0.9);
 }
 .nav05:hover {   
     border-right: 12px solid black;
     padding-left: 12px;
-    background-color: rgb(84,113,153,0.9);
+    background-color: rgb(209,189,169,0.9);
 }
