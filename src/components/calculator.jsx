@@ -35,8 +35,8 @@ class Calculator extends Component {
             <>
             <div className = "calc">
 
-                <input onChange = {} type = "text"></input>
-                <button onClick = {this.handleInputChange.bind(this)} >Wprowadź</button>
+                <input onChange = {this.handleInputChange.bind(this)} type = "text"></input>
+                <button  >Wprowadź</button>
                 <p className = "result">Ile za to kupisz: {this.state.resultArray[0]}  i dostaniesz  {this.state.resultArray[1]}gr reszty</p>
 
             </div>
