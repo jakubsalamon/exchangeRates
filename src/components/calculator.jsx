@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../css/calc.css';
+import {zmienna} from './layout';
+
 
 const calc = (yourMoney, currencyCourse) => {
 
@@ -13,12 +15,15 @@ const calc = (yourMoney, currencyCourse) => {
     }
 
 class Calculator extends Component {
+    constructor() {
+        super()
+        console.log(zmienna);
+    }
     state = { 
-        resultArray: []
-     }
-
-     
-     
+        resultArray: [],
+        text: "",
+        text2: ""
+    }
      
      handleInputChange(e) {
          let array = [];
@@ -27,7 +32,17 @@ class Calculator extends Component {
          this.setState({
              resultArray: [...array]
             })
+        }
 
+        handleButtonClick = () => {
+            
+            this.setState({
+                text: `Kupisz za to ${this.state.resultArray[0]}`
+                    })
+            this.setState({
+                text2: `, i dostaniesz ${this.state.resultArray[1]}gr reszty`
+                     })
+                    
         }
 
     render() { 
@@ -36,8 +51,8 @@ class Calculator extends Component {
             <div className = "calc">
 
                 <input onChange = {this.handleInputChange.bind(this)} type = "text"></input>
-                <button  >Wprowadź</button>
-                <p className = "result">Ile za to kupisz: {this.state.resultArray[0]}  i dostaniesz  {this.state.resultArray[1]}gr reszty</p>
+                <button onClick = {this.handleButtonClick.bind(this)} >Wprowadź</button>
+                <p className = "result">{this.state.text}{this.state.text2}</p>
 
             </div>
 
