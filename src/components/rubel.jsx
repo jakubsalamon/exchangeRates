@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ValueContainer from './hej02.js';
 
 class Rubel extends Component {
     state = {  }
@@ -11,7 +12,10 @@ class Rubel extends Component {
 
     render() { 
         return ( 
+            <div>
+            <ValueContainer propWithValue = {this.props.szeloba}/>
             <p>{this.state.rubel} zł</p>
+            </div>
          );
     }
 }

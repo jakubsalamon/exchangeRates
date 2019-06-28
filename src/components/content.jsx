@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'reactn';
+import { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
 import '../css/content.css';
 

@@ -76,6 +76,7 @@ class Container extends Component {
             </nav>
             <Content waldek = {this.state.dollar} euro = {this.state.euro} yen = {this.state.yen} rubel = {this.state.rubel}/>
             </Router>
+            <p>fsdf</p>
             </div>
             </>
          );

@@ -31,5 +31,5 @@ const callXhr = (method, url, as = false) => {
     let response = JSON.parse(xhr.response);
     let result = response.rates[0].mid;
     return result;
-
+    
 }
