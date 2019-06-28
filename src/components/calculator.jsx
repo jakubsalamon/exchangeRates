@@ -75,12 +75,13 @@ class Calculator extends Component {
             <>
             <div className = "calc">
                 <div className = "welcomeText">
-                <p>Wpisz ile posiadasz złotówek, a program powie Ci, ile możesz za to kupić jednostek wybranej waluty</p>
+                <p>Ile masz złotówek? Program powie Ci, ile możesz za to kupić jednostek wybranej waluty</p>
                 </div>
-                <input ref = "numberInput" onChange = {this.handleInputChange.bind(this)} type = "text"></input><p>zł</p>
+                <input ref = "numberInput" onChange = {this.handleInputChange.bind(this)} type = "text"></input><p style = {{margin: "0 8px 0 8px"}}>zł</p>
                 <button onClick = {this.handleButtonClick.bind(this)} >Wprowadź</button>
+                <div className = "response">
                 <p className = "result">{this.state.text}{this.state.text2}</p>
-
+                </div>
             </div>
 
             </>

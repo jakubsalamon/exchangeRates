@@ -6,9 +6,15 @@ import Calculator from './calculator';
 function Infobox() {
     
     const [currValue, setCurrValue] = useGlobal('currValue');
+    let disVal
+    if (currValue === 0) {
+        disVal = "none";
+    }
+    console.log("benc")
+    console.log(currValue);
      
         return ( 
-            <div className = "infobox">
+            <div className = "infobox" style = {{display: disVal}}>
             <Calculator value = {currValue} />
             </div>     
     );

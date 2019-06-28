@@ -1,19 +1,21 @@
 .calc {
+    padding-top: 6px;
     text-align: center;
     box-sizing: border-box;
     display: flexbox;
 }
 .calc p {
-    
-    
     display: inline-block;
-    
-    
-    font-size: 20px;
-    
+    font-size: 16px;
 }
 .calc button, input {
+    margin-top: 6px;
     font-size: 20px;
     border: black 2px solid;
     outline: none;
+    padding: 2px;
+}
+.welcomeText {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }

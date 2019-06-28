@@ -71,7 +71,7 @@ class Container extends Component {
                     <li className = "li"><NavLink to = "/euro" className = "nav02" onClick = {this.moneyGeter02.bind(this)}>Kurs Euro</NavLink></li>
                     <li className = "li"><NavLink to = "/yen" className = "nav03" onClick = {this.moneyGeter03.bind(this)}>Kurs Yena</NavLink></li>
                     <li className = "li"><NavLink to = "/rubel" className = "nav04" onClick = {this.moneyGeter04.bind(this)}>Kurs Rubla</NavLink></li>
-                    <li className = "li"><NavLink to = "/" className = "nav05">Powrót</NavLink></li>
+                   
                 </ul>
             </nav>
             <Content waldek = {this.state.dollar} euro = {this.state.euro} yen = {this.state.yen} rubel = {this.state.rubel}/>
