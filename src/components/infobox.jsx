@@ -10,9 +10,6 @@ function Infobox() {
     if (currValue === 0) {
         disVal = "none";
     }
-    console.log("benc")
-    console.log(currValue);
-     
         return ( 
             <div className = "infobox" style = {{display: disVal}}>
             <Calculator value = {currValue} />

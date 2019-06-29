@@ -9,14 +9,7 @@ class Dolar extends Component {
         this.setState({
             dollar: this.props.szeloba
         })
-    }
-    //  componentWillReceiveProps(props) {
-    //     this.setState({
-    //         dollar: props.szeloba
-    //     })
-    // }
-    
-
+     }
     render() { 
         
         

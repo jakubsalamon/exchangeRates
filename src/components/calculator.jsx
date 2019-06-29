@@ -8,29 +8,25 @@ const calc = (yourMoney, currencyCourse) => {
     let division = yourMoney/currencyCourse;
     let endOf = division%1;
     let wholeMoney = division - endOf;
-    let keepTheChange = Math.round(endOf * 100)/100;
-    let resultArr = [wholeMoney, keepTheChange];
-    return resultArr;
-    
+    // let keepTheChange = Math.round(endOf * 100)/100;
+    // let resultArr = [wholeMoney, keepTheChange];
+    return wholeMoney;
     }
 
 class Calculator extends Component {
-    constructor(props) {
-        super(props)
-        console.log("szalom");
-    }
+    
     state = { 
-        resultArray: [],
+        result: "",
         text: "",
         text2: ""
     }
      
      handleInputChange(e) {
-         let array = [];
+         let array;
          array = calc(e.target.value, this.props.value);
          console.log(array);
          this.setState({
-             resultArray: [...array]
+             result: array
             })
         }
 
@@ -40,7 +36,7 @@ class Calculator extends Component {
 
         componentWillReceiveProps() {
             this.setState({
-                resultArray: [],
+                result: "",
                 text: "",
                 text2: ""
             });
@@ -57,15 +53,12 @@ class Calculator extends Component {
             else {
                 if (this.refs.numberInput.value < this.props.value) {
             this.setState({
-                text: `Za to nic nie kupisz frajerze`
+                text: `Masz za mało pieniędzy...`
             })
                 } else {
             this.setState({
-                text: `Kupisz za to ${this.state.resultArray[0]}`
+                text: `Jednostki tej waluty, które kupisz za tyle złotówek, to: ${this.state.result}`
                     })
-            this.setState({
-                text2: `, i dostaniesz ${this.state.resultArray[1]}gr reszty`
-                     })
                     }}
         }
 
@@ -75,12 +68,12 @@ class Calculator extends Component {
             <>
             <div className = "calc">
                 <div className = "welcomeText">
-                <p>Ile masz złotówek? Program powie Ci, ile możesz za to kupić jednostek wybranej waluty</p>
+                <p>Ile masz złotówek? Program powie Ci ile możesz za to kupić jednostek wybranej waluty</p>
                 </div>
-                <input ref = "numberInput" onChange = {this.handleInputChange.bind(this)} type = "text"></input><p style = {{margin: "0 8px 0 8px"}}>zł</p>
-                <button onClick = {this.handleButtonClick.bind(this)} >Wprowadź</button>
+                <input ref = "numberInput" onChange = {this.handleInputChange.bind(this)} type = "number" placeholder = "Wprowadź ilość złotówek..."></input><p style = {{margin: "0 10px 0 10px"}}>zł</p>
+                <button onClick = {this.handleButtonClick.bind(this)} >Zatwierdź</button>
                 <div className = "response">
-                <p className = "result">{this.state.text}{this.state.text2}</p>
+                <p className = "result">{this.state.text}</p>
                 </div>
             </div>
 
